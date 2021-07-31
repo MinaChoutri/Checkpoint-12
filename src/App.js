@@ -1,24 +1,22 @@
-import logo from "./logo.svg";
+import logo from "./source.png";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <div
-        className="btn-group"
-        role="group"
-        aria-label="Basic outlined example"
-      >
-        <button type="button" className="btn btn-outline-primary">
-          Left
-        </button>
-        <button type="button" className="btn btn-outline-primary">
-          Middle
-        </button>
-        <button type="button" className="btn btn-outline-primary">
-          Right
-        </button>
+      <div style={{ border: "solid 1px black", maxWidth: "100vw" }}>
+        <h1 class="title red">Your name here</h1>
+
+        <br />
+        <img src={logo} />
+        <br />
+
+        <img src="logoamp.png" alt />
       </div>
+
+      <video width="320" height="240" controls>
+        <source src="myVideo.mp4" type="video/mp4" />
+      </video>
     </div>
   );
 }
