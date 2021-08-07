@@ -31,8 +31,8 @@ function App() {
   return (
     <div className="App">
       <Profile />
-      <Adresse />
-      <FullName />
+      <Adresse adress="121 Rue Didouche Mourad 16000 Alger" />
+      <FullName name="Jhon Doe" />
     </div>
   );
 }

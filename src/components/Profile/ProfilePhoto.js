@@ -1,9 +1,13 @@
 import ProfileP from "./profilephoto.jpg";
 import "./ProfilePhoto.css";
 const Profile = () => {
+  const photoClick = (e) => {
+    e.preventDefault();
+    alert("Congrats ! The photo has been successfully clicked");
+  };
   return (
     <div>
-      <img className="pp" src={ProfileP} />
+      <img onClick={photoClick} className="pp" src={ProfileP} />
     </div>
   );
 };

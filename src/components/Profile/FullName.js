@@ -1,7 +1,9 @@
-const FullName = () => {
+import "./FulLName.css";
+
+const FullName = (props) => {
   return (
-    <div>
-      <p> John Doe </p>
+    <div className="style">
+      <p> Full name : {props.name} </p>
     </div>
   );
 };

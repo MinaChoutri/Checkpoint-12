@@ -1,7 +1,9 @@
-const Adresse = () => {
+import "./Adresse.css";
+
+const Adresse = (props) => {
   return (
-    <div>
-      <p> 24, Avenue Souidani Boudjemâa, Les Tagarins, Alger </p>
+    <div className="style2">
+      <p> Adress : {props.adress} </p>
     </div>
   );
 };
